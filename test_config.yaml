@@ -1,0 +1,21 @@
+stuff_cls: [0, 1]
+thing_cls: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+num_sem_cls: 20
+
+# DBSCAN
+class_weights: [0.001, 0.001, 0.32464997, 1.26816394, 0.08436849, 0.94374991, 0.3145833, 0.1676911, 0.41836336, 2.53632787, 0.47742642, 1.93244028, 1.09679043, 1.06792753, 2.38713212, 3.12163431, 2.13585505, 1.09679043, 3.12163431, 0.21358551, 1.]
+use_dbscan: true
+dbscan_eps: 0.5
+dbscan_min_points: 1
+
+# Class Scores Topk
+topk_per_scene: 80
+
+obj_normalization: false
+obj_normalization_thr: 0.01
+# NMS configuration
+nms: true
+ins_score_thr: 0.
+nms_iou_threshold: 0.5
+# Small Object Supression configuration
+n_point_thr: 100
